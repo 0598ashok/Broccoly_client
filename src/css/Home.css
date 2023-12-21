@@ -1,0 +1,339 @@
+.home_banner {
+  background-image: url("../images/Broccoly\ BG1.jpg");
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.BroccolyNavContainer{
+  box-shadow: 0px 25px 20px -20px rgba(93, 92, 92, 0.45);
+}
+
+@media screen and (min-width:0px) and (max-width:767px) {
+  .home_banner{
+    background-image: url("../images/Broccoly\ BG1\ \(1\).jpg");
+    margin-top: 40px;
+    display: flex;
+    align-items: end;
+    color: #fff;
+    text-align: center;
+  }
+  .home_banner h1{
+    font-size: 25px;
+  }
+  .home_banner p{
+    font-size: 11px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+  .home_banner h1{
+    font-size: 29px;
+  }
+  .home_banner p{
+    font-size: 11px;
+  }
+}
+
+.home_banner button {
+  height: 50px;
+  line-height: 46px;
+  padding: 0 30px;
+  border: none;
+  border-bottom: solid 4px #839900;
+  border-radius: 4px;
+  display: inline-block;
+  color: #222222;
+  font-size: 20px;
+  font-family: revert;
+  text-decoration: none;
+  text-align: center;
+  background-color: #b6cc00;
+  margin-bottom: 30px;
+  transition-property: background-color, color, opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
+.home_banner button:hover {
+  background-color: #839900;
+  color: #222;
+}
+
+.owl_carousel_cards .card a {
+  color: #603 !important;
+  text-decoration: underline !important;
+}
+.owl_carousel_cards .card a:hover {
+  color: rgb(102, 0, 29) !important;
+  text-decoration: underline !important;
+}
+.owl_carousel_cards .card {
+  background-color: transparent !important;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px inset;
+}
+
+@media screen and (min-width: 0px) and (max-width: 717px) {
+  .owl_carousel_cards .card {
+    background-color: transparent !important;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px inset;
+  }
+  .owl_carousel_cards p {
+    font-size: 16px !important;
+  }
+}
+.owl_carousel_cards img {
+  width: 100px !important;
+  height: 100px !important;
+  border-radius: 50%;
+}
+.owl_carousel_cards i {
+  color: #603;
+  padding: 0px 5px;
+}
+.owl_carousel_cards p {
+  font-size: 20px;
+}
+
+/* Home BMI calculator  */
+.home_bmiform {
+  background-color: #f7f5f3;
+  padding: 28px 40px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 991px) {
+  .home_top_bmi {
+    margin-top: 50px !important;
+  }
+  .home_bmiform .h_w_row .col-md-6 {
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  .home_bmiform {
+    padding: 10px !important;
+  }
+}
+.home_bmiform .row {
+  margin-top: 20px;
+}
+.home_bmiform label {
+  margin: auto;
+}
+
+.home_bmiform h2 {
+  box-shadow: 0px 15px 10px -15px #111111b5;
+  padding: 10px 0px;
+}
+.home_bmiform img {
+  width: 90px;
+  height: 90px;
+  padding: 10px;
+  background-color: #f7f5f3;
+
+  -webkit-background-size: 70px 70px;
+  background-size: 70px 70px;
+  border-radius: 45px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -35px;
+}
+
+.home_bmiform .col-md-6 label {
+  padding-right: 5px;
+}
+.home_bmiform .col-md-6 input {
+  margin-right: 5px;
+}
+.home_bmiform .col-md-6 input::placeholder {
+  font-size: 12px;
+  color: #ddd !important;
+}
+/* Home BMI calculator  */
+
+.gender_row label{
+font-size: 15px;
+}
+
+.home_sec3{
+  background-color: #603;
+}
+
+.home_banner2{
+  background-image: url(../images/Broccoly\ BG2.jpg);
+  height: auto;
+  background-position: center;
+
+}
+.home_sec3_content{
+  color: #ffffff;
+  padding: 50px;
+}
+@media screen and (min-width:0px) and (max-width:570px) {
+  .home_sec3_content{
+    color: #ffffff;
+    padding: 10px;
+  }
+  .home_sec3_content h1{
+    font-size: 30px;
+    padding-top: 50px;
+
+  }
+  .home_sec3_content ul li{
+    font-size: 13px;
+  }
+}
+.home_sec3_content ul{
+  list-style-type: none;
+}
+.home_sec3_content li{
+  margin-top: 25px;
+}
+
+.home_sec3_content button{
+  height: 50px;
+  line-height: 46px;
+  padding: 0 30px;
+  border: none;
+  border-bottom: solid 4px #839900;
+  border-radius: 4px;
+  display: inline-block;
+  color: #222222;
+  font-size: 20px;
+  font-family: revert;
+  text-decoration: none;
+  text-align: center;
+  background-color: #b6cc00;
+  margin-bottom: 30px;
+  transition-property: background-color, color, opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+.home_sec3_content button:hover{
+  background-color: #839900;
+  color: #222;
+}
+
+.home_works img{
+  width: 200px;
+  height: 200px;
+}
+
+.home_works{
+  background-image: url(../images/works_bg.png);
+  background-repeat: no-repeat;
+background-position: center;
+/* background-size: cover; */
+}
+
+
+@media screen and (min-width:0px) and (max-width:768px) {
+  .home_broccoly_works{
+    display: none;
+  }
+}
+
+@media screen and  (min-width:769px) {
+  .home_broccoly_works1{
+    display: none;
+  }
+}
+
+.home_broccoly_works1 img{
+  width: 200px !important;
+  margin: auto;
+}
+
+.home_news_container {
+  display: grid;
+   /* Three equal-width columns */
+  gap: 10px; /* Gap between grid items */
+}
+
+.home_news_container_item {
+  /* background-color: #eee; */
+  padding: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+.read-more-less--more,
+.read-more-less--less {
+  color: #603;
+  font-size: 15px;
+  display: block;
+  text-decoration: underline;
+  padding-top: 10px;
+}
+
+.home_news_reviews{
+  background-color: #ffffff;
+}
+
+
+.home_broccoly_works button{
+  height: 50px;
+  line-height: 46px;
+  padding: 0 30px;
+  border: none;
+  border-bottom: solid 4px #839900;
+  border-radius: 4px;
+  display: inline-block;
+  color: #222222;
+  font-size: 20px;
+  font-family: revert;
+  text-decoration: none;
+  text-align: center;
+  background-color: #b6cc00;
+  margin-bottom: 30px;
+  transition-property: background-color, color, opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+ 
+}
+.home_broccoly_works button:hover{
+  background-color: #839900;
+  color: #222;
+}
+
+.home_broccoly_works h5{
+  font-size: 15px;
+}
+.home_broccoly_works p{
+  font-size: 13px;
+  margin: auto;
+}
+.home_broccoly_works1 button{
+  height: 50px;
+  line-height: 46px;
+  padding: 0 30px;
+  border: none;
+  border-bottom: solid 4px #839900;
+  border-radius: 4px;
+  display: inline-block;
+  color: #222222;
+  font-size: 20px;
+  font-family: revert;
+  text-decoration: none;
+  text-align: center;
+  background-color: #b6cc00;
+  margin-bottom: 30px;
+  transition-property: background-color, color, opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+ 
+}
+.home_broccoly_works1 button:hover{
+  background-color: #839900;
+  color: #222;
+}

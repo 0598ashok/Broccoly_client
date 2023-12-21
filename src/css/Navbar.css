@@ -1,0 +1,229 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap'); */
+
+
+
+.BasketAi{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.BroccolyLogo {
+    font-family: Frijole;
+
+}
+.MenuBarRightContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.Accountcon{
+   border-left: 2px solid #000000;
+   border-right: 2px solid #000000;
+}
+.Basketcon{
+   border-right: 2px solid #000000;
+
+}
+
+@media (max-width:450px) {
+    .BroccolyLogo {
+        font-size: 36px;
+    
+    }
+
+    .navAcc{
+        display: none;
+    }
+
+    .navBas{
+        display: none;
+
+    }
+
+    .Basketcon{
+        margin-left: 25%;
+    }
+    .Accountcon{
+        margin-left: 25%;
+
+    }
+    .menuText{
+        font-size: 10px;
+    }
+    .navAccBas{
+        font-size: 9px;
+        
+    }
+
+ 
+}
+
+
+@media (max-width:768px) {
+
+    
+    .Accountcon{
+        border: none;
+     }
+     .Basketcon{
+        border: none;
+     }
+
+    .HeaderCallcontainerToggler {
+        display: none;
+    }
+   
+    
+    body{
+        padding-top: 56px;
+    }
+    .BroccolyLogo {
+        font-size: 15px;
+    
+    }
+    .menuText{
+        font-size: 15px;
+    }
+    .navAccBas{
+        font-size: 14px;
+        
+    }
+
+
+}
+
+
+@media (min-width:768px) {
+
+  
+    .HeaderCallcontainer {
+
+        display: none;
+    }
+    .menuText{
+        font-size: 16px;
+        color: #000;
+    }
+    .navAccBas{
+        font-size: 15px;
+        color: #000;
+    }
+    .NavCall{
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .BroccolyNavContainer {
+        height: 100px;
+        background-color: #fff !important;
+    }
+
+    body{
+        padding-top: 100px;
+    }
+
+    .HeaderMenuContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .BroccolyHeaderContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .BroccolyLogo {
+        font-size: 30px;
+    
+    }
+
+    
+}
+
+@media screen and (min-width:930px) and (max-width:991px){
+    .menuText{
+        font-size: 14px;
+    } 
+}
+@media (max-width:930px) {
+    .menuText{
+        font-size: 14px;
+    }
+
+    .navAccBas{
+        font-size: 8px;
+        
+    }
+
+}
+
+@media (max-width:400px) {
+    .NavCall{
+        font-size: 25px;
+        margin: 0;
+    }
+    .callNumber{
+        display: none;
+    }
+}
+@media (min-width: 991px){
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 0.9rem !important;
+    padding-left: 0.9rem !important;
+}
+}
+@media screen and (min-width:401px) and (max-width:600px) {
+    .NavCall{
+        font-size: 20px;
+        margin: 0;
+    }
+    .callNumber{
+        font-size: 17px;
+        margin-left: 5px;
+    }
+    .navlogo{
+        text-align: right !important;
+    }
+}
+@media screen and (min-width:601px) and (max-width:768px) {
+    .NavCall{
+        font-size: 25px;
+        margin: 0;
+    }
+    .callNumber{
+        font-size: 20px;
+        margin-left: 5px;
+    }
+    .navlogo{
+        text-align: right !important;
+    }
+}
+
+.BroccolyLogo img{
+    width: 100px;
+}
+
+@media screen and (max-width:449px) {
+    .BroccolyLogo img{
+        width: 70px !important;
+    }
+}
+
+.nav_toggke_icon{
+    font-size: 25px;
+    color: #a9a1a1;
+    border: 2px solid #a9a1a1;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+
+

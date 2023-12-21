@@ -1,0 +1,102 @@
+.login_input{
+    position: relative;
+    padding-top: 13px;
+  }
+  
+  .login_input input{
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    outline: none;
+    min-width: 250px;
+    padding: 15px 20px;
+    font-size: 16px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -webkit-appearance:none;
+    padding: 25px 10px !important;
+  }
+  
+  .login_input input:focus{
+    border: 1px solid #603;
+    box-shadow: none !important;
+  }
+  
+  
+  .login_input label{
+    pointer-events: none;
+    position: absolute;
+    top: calc(45% - 8px);
+    left: 15px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    background-color: white;
+    padding: 5px;
+    box-sizing: border-box;
+    color: lightgrey;
+  }
+  
+  .login_input input:focus + label,
+  .login_input input:not(:placeholder-shown) + label{
+    font-size: 13px;
+    top: 0;
+    color: #603;
+    
+  }
+  
+ 
+  .login_form_btn  {
+    height: 50px;
+    line-height: 46px;
+    padding: 0 30px;
+    border: none;
+    border-bottom: solid 4px #839900;
+    border-radius: 4px;
+    display: inline-block;
+    color: #222222;
+    font-size: 20px;
+    font-family: revert;
+    text-decoration: none;
+    text-align: center;
+    background-color: #b6cc00;
+    margin-bottom: 30px;
+    transition-property: background-color, color, opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+  }
+  
+  .login_form_btn:hover {
+    background-color: #839900;
+    color: #222;
+    opacity: 1;
+  }
+  .login_form_card a{
+text-decoration: underline !important;
+color: #603 !important;
+cursor: pointer;
+
+  }
+
+  .login_form_card{
+    padding: 50px 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .login_form_card h4{
+    color: #485242;
+  }
+  .login_form_card h4 em{
+    font-size: 16px !important;
+  }
+
+  .login_eye_icon {
+    position: absolute;
+    right: 10px;
+    top: 60%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    color: #666; 
+  }

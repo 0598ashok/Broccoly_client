@@ -1,0 +1,253 @@
+/* .btn {
+  display: block;
+  width: fit-content;
+  font-size: 1.2rem;
+  margin: 20px 0px;
+  padding: 8px 15px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background-color: #fff;
+  color: #333;
+}
+
+.center {
+  text-align: center;
+  margin: 24px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.img-container {
+  text-align: center;
+}
+
+.img-container img {
+  height: 200px;
+} */
+
+.bmi-chart {
+  
+  height: 310px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bmi-chart .bmi-text {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 20px;
+  z-index: 5;
+  font-size: 40px;
+  text-align: center;
+  font-family: "Source Sans Pro Bold", sans-serif;
+}
+
+.bmi-chart .gauge {
+  background-image: url(../images/bmicircle.jpeg);
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+}
+.bmi-chart .gauge .dial {
+  content: "";
+  display: block;
+  background-image: url(../images/bmipointer.jpeg);
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -73px;
+  margin-left: -20px;
+  width: 40px;
+  height: 93px;
+  -webkit-transform-origin: 20px 72.7px;
+  -ms-transform-origin: 20px 72.7px;
+  transform-origin: 20px 72.7px;
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  -webkit-transition: transform 1.5s linear;
+  -webkit-transition: -webkit-transform 1.5s linear;
+  transition: -webkit-transform 1.5s linear;
+  transition: transform 1.5s linear;
+  transition: transform 1.5s linear, -webkit-transform 1.5s linear;
+}
+
+.displayingContainer {
+  display: none;
+  /* transform: translateY(-500px); */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.bmiform {
+  width: 60%;
+}
+.bmiform input {
+  padding: 20px 10px;
+}
+
+::placeholder {
+  color: #000 !important;
+}
+.bmiform input:focus {
+  box-shadow: none !important;
+  border-color: #603;
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .bmiform {
+    width: 100% !important;
+    padding: 0px;
+  }
+  .bmiform .h_w_row {
+    width: 100% !important;
+    margin: auto;
+  }
+  .bmiform .h_w_row .col-md-6 {
+    padding: 0px;
+  }
+  .bmiform .h_w_row input {
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .bmiform .h_w_row {
+    width: 100% !important;
+    margin: auto;
+  }
+}
+
+.bmiform .row {
+  margin-top: 25px;
+}
+
+.bmiform label {
+  margin: auto;
+  padding-right: 10px;
+}
+
+.bmiform .h_w_row {
+  width: 80%;
+  margin: auto;
+}
+.bmiform .h_w_row input {
+  margin-right: 10px;
+  padding: 10px;
+}
+
+/* input type number  */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input:invalid {
+  outline: medium solid red;
+}
+/* input type number  */
+
+.bmisubmit {
+  height: 50px;
+  line-height: 46px;
+  padding: 0 30px;
+  border: none;
+  border-bottom: solid 4px #839900;
+  border-radius: 4px;
+  display: inline-block;
+  color: #222222;
+  font-size: 20px;
+  font-family: revert;
+  text-decoration: none;
+  text-align: center;
+  background-color: #b6cc00;
+  margin-bottom: 30px;
+  transition-property: background-color, color, opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
+.bmisubmit:hover {
+  background-color: #839900;
+  color: #222;
+  opacity: 1;
+}
+
+input[type="radio"] {
+  margin-left: 5px;
+}
+input[type="radio"]:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #ffffff;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+  cursor: pointer;
+  padding-left: 10px; 
+}
+
+input[type="radio"]:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #603;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.gender_row label {
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+@media screen and (min-width:0px) and (max-width:361px) {
+  .gender_row label {
+    padding: 0px !important;
+  }
+}
+
+/* .content11 {
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+} */
