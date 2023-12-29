@@ -1,0 +1,45 @@
+.terms_conditions {
+  padding: 100px 10px;
+  font-weight: 100;
+  text-transform: math-auto !important;
+}
+.terms_conditions h6 {
+  font-weight: 100;
+  text-transform: math-auto !important;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  .terms_conditions h6 {
+    padding-top: 50px;
+    font-size: 14px;
+    text-align: justify;
+  }
+  .terms_conditions p {
+    padding: 10px 0px 10px 15px;
+    font-size: 15px;
+    text-transform: capitalize;
+  }
+  .terms_conditions p.para_sub {
+    padding: 0px 0px 3px 50px;
+    font-size: 15px;
+    color: #6a6a6a;
+}
+}
+.terms_conditions h1 {
+  font-weight: 100;
+  font-size: 25px;
+  padding: 10px 0px;
+  color: #603;
+}
+.terms_conditions p {
+  padding: 10px 0px 10px 30px;
+  font-size: 15px;
+  text-transform: math-auto !important;
+}
+.terms_conditions p.para_sub {
+  padding: 0px 0px 3px 60px;
+  font-size: 15px;
+  color: #6a6a6a;
+}

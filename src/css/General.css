@@ -1,0 +1,75 @@
+#faqG_main {
+    margin: 20px 0px 50px;
+  }
+
+  #faqG_main #faq .card {
+    /* margin-bottom: 30px; */
+    /* border: 1; */
+  }
+  
+  #faqG_main #faq .card .card-header {
+    border: 0;
+    -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+            box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+    border-radius: 2px;
+    padding: 0;
+  }
+  
+  #faqG_main #faq .card .card-header .btn-header-link {
+    /* color: #fff; */
+    display: block;
+    text-align: left;
+    background: #ffffff;
+    color: #603;
+    padding: 20px;
+    /* border-bottom: 1px solid #ddd; */
+  }
+  
+  #faqG_main #faq .card .card-header .btn-header-link:after {
+    content: "\f107";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    float: right;
+  }
+  
+  #faqG_main #faq .card .card-header .btn-header-link.collapsed {
+    background: #f6f5f4;
+    color: #603;
+    /* border-top: 1px solid #ddd; */
+  }
+  @media screen and (min-width:0px) and (max-width:535px) {
+    #faqG_main #faq .card .card-header .btn-header-link.collapsed {
+     min-width: 14px !important;
+    }
+  }
+  #faqG_main #faq .card .card-header .btn-header-link.collapsed:after {
+    content: "\f106";
+  }
+  
+  #faqG_main #faq .card .collapsing {
+    background: #ffffff;
+    line-height: 30px;
+  }
+  
+  #faqG_main #faq .card .collapse {
+    border: 0;
+  }
+  
+  #faqG_main #faq .card .collapse.show {
+    background: #ffffff;
+    line-height: 30px;
+    color: #222;
+  }
+
+  .faq_general h1{
+    font-weight: 100;
+    padding: 40px 0px;
+  }
+  .faq_general h4{
+    font-weight: 100;
+    padding: 1px 0px;
+  }
+  .faq_general ul li{
+    list-style-type: none;
+    padding: 10px 0px;
+  }

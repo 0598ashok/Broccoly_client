@@ -4,7 +4,7 @@ import "../css/CorePackages.css";
 import { Md5G, MdOutlinePerson, MdOutlinePerson2 } from "react-icons/md";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Tooltip as ReactTooltip } from "react-tooltip";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 //import images
 import vegplan from "../images/vegetarian.png";
 import breakfast from "../images/veg-plan/breakfast.png";
@@ -13,16 +13,8 @@ import dinner from "../images/veg-plan/dinner.png";
 import snack from "../images/veg-plan/snack.png";
 
 const VegetarianPackage = () => {
-  const [activeCard, setActiveCard] = useState(1);
+  const navigate = useNavigate();
 
-  const handleSetActiveCard = (cardId) => {
-    setActiveCard(cardId);
-  };
-
-  const [activeGender, setActiveGender] = useState(1);
-  const handleSetActiveGender = (genderId) => {
-    setActiveGender(genderId);
-  };
 
   const cards = [
     { id: 1, price: "349.00", weight:"12kg's" ,week : "24 week" ,save:"90" },
@@ -36,6 +28,42 @@ const VegetarianPackage = () => {
     { id: 1, gender: "Male", icon: <MdOutlinePerson /> },
     { id: 2, gender: "Female", icon: <MdOutlinePerson2 /> },
   ];
+
+  const [activeCard, setActiveCard] = useState(1);
+
+  const [activPackage, setActivPackage] = useState(cards[0]);
+
+  console.log(activPackage);
+  const handleSetActiveCard = (cardId, card) => {
+    setActiveCard(cardId);
+    setActivPackage((prevPackage) => ({ ...prevPackage, ...card }));
+    console.log("Clicked Card:", card);
+  };
+
+
+  useEffect(() => {
+    console.log("activPackage changed:", activPackage);
+  }, [activPackage]);
+
+
+  const [activeGender, setActiveGender] = useState(1);
+  const handleSetActiveGender = (genderId) => {
+    setActiveGender(genderId);
+  };
+
+  const handleChooseMeals = () => {
+    const selectedGender = selectgender.find(
+      (gender) => gender.id === activeGender
+    );
+    // Find the selected card based on the activeCard state
+    const selectedCard = cards.find((card) => card.id === activeCard);
+    // Log the selected gender and card information to the console
+    console.log("Selected Gender:", selectedGender.gender);
+    console.log("Selected Card Price:", selectedCard.price);
+   navigate(
+      `/diet-plans/vegplan/vegmeals/${selectedGender.gender.toLowerCase()}/${selectedCard.price.toLowerCase()}`
+    );
+  };
 
   const content = (
     <>
@@ -122,7 +150,7 @@ const VegetarianPackage = () => {
                   <div
                     key={card.id}
                     className="col-lg-4 col-md-6 col-sm-6 core_pack_cards"
-                    onClick={() => handleSetActiveCard(card.id)}
+                    onClick={() => handleSetActiveCard(card.id,card)}
                   >
                     <div
                       className={`core_package_card ${
@@ -162,7 +190,7 @@ const VegetarianPackage = () => {
                   <h6>First hamper</h6>
                 </div>
                 <div className="col-md-6 text-right">
-                  <h6>£349.00</h6>
+                  <h6>₹{activPackage?.price}</h6>
                 </div>
               </div>
 
@@ -174,12 +202,12 @@ const VegetarianPackage = () => {
                   <h6>Following hampers</h6>
                 </div>
                 <div className="col-md-6 text-right">
-                  <h6>£349.00</h6>
+                  <h6>₹{activPackage?.price}</h6>
                   <p>(every 4 weeks)</p>
                 </div>
               </div>
 
-              <button className="core_mealbtn">Choose meals</button>
+              <button className="core_mealbtn" onClick={handleChooseMeals}>Choose meals</button>
             </div>
           </div>
         </div>

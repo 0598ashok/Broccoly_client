@@ -227,12 +227,14 @@ font-size: 15px;
 .home_works img{
   width: 200px;
   height: 200px;
+  /* position: relative;
+  top: 50px; */
 }
 
 .home_works{
-  background-image: url(../images/works_bg.png);
-  background-repeat: no-repeat;
-background-position: center;
+    /* background-image: url(../images/works_bg.png);
+    background-repeat: no-repeat;
+  background-position: center; */
 /* background-size: cover; */
 }
 
@@ -308,10 +310,14 @@ background-position: center;
 
 .home_broccoly_works h5{
   font-size: 15px;
+  margin-top: 40px;
+  text-align: left !important;
 }
 .home_broccoly_works p{
   font-size: 13px;
-  margin: auto;
+margin-top: 10px;
+  /* padding: 0px 30px; */
+  text-align: left !important;
 }
 .home_broccoly_works1 button{
   height: 50px;

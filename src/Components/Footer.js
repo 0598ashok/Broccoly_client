@@ -37,7 +37,7 @@ const Footer = () => {
                 <Link to="/contact">Contact us</Link>
               </li>
               <li>
-                <a href="#">My Account</a>
+                <Link to="/login">My Account</Link>
               </li>
             </ul>
           </div>
@@ -45,16 +45,16 @@ const Footer = () => {
             <h4>About us</h4>
             <ul class="footer_list">
               <li>
-                <a href="#">About Broccoly</a>
+                <Link to="/about">About Broccoly</Link>
               </li>
               <li>
-                <a href="#">Terms & Conditions</a>
+                <Link to="/terms-conditions">Terms & Conditions</Link>
               </li>
               <li>
-                <a href="#">Privacy Policy</a>
+                <Link to="/privacy-policy">Privacy Policy</Link>
               </li>
               <li>
-                <a href="#">Cookie Policy</a>
+                <Link to="/cookies-policy">Cookie Policy</Link>
               </li>
             </ul>
           </div>
@@ -62,13 +62,13 @@ const Footer = () => {
             <h4>Here to help</h4>
             <ul class="footer_list">
               <li>
-                <a href="#">Delivery & Returns</a>
+                <Link to="/delivery-returns">Delivery & Returns</Link>
               </li>
               <li>
-                <a href="#">FAQs</a>
+                <Link to="/faq">FAQs</Link>
               </li>
               <li>
-                <a href="#">Security</a>
+                <Link to="/security">Security</Link>
               </li>
             </ul>
           </div>

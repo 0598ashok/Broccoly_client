@@ -21,6 +21,9 @@ import dailymail from "../images/newsreview/daily-mail.png";
 import woman from "../images/newsreview/woman.png";
 import thetimes from "../images/newsreview/the-times.png";
 import zest from "../images/newsreview/zest.png";
+import avatar1 from "../images/avatar1.png";
+import avatar2 from "../images/avatar2.png";
+import avatar3 from "../images/avatar3.png";
 
 import { Link } from "react-router-dom";
 
@@ -88,6 +91,10 @@ const Home = () => {
   const [message, setMessage] = useState("");
   const [degree, setdegree] = useState("");
   const [showResult, setShowResult] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [age, setAge] = useState("");
+  const [contactNumber, setContactNumber] = useState("");
 
   var e = 0,
     o = 0;
@@ -99,12 +106,25 @@ const Home = () => {
     //   alert("Please enter a valid weight and height");
     // }
     if (feet === "" || inches === "") {
-      toast.error("Please enter a height");
+      toast.error("Please Enter Height");
       return;
     } else if (weight === "") {
-      toast.error("Please enter a weight");
+      toast.error("Please Enter Weight");
       return;
-    } else {
+    } else if (name === "") {
+      toast.error("Please Enter Name");
+      return;
+    } else if (email === "") {
+      toast.error("Please Enter Email");
+      return;
+    } else if (age === "") {
+      toast.error("Please Enter Age");
+      return;
+    } else if (contactNumber === "") {
+      toast.error("Please Enter Contact Number");
+      return;
+    }
+  else {
       // Convert height to meters
       const heightInMeters = feet * 0.3048 + inches * 0.0254;
 
@@ -150,15 +170,20 @@ const Home = () => {
         setdegree(a); // Set your desired rotation degree
       }, 50);
       console.log(a);
+      setShowResult(true);
+      setWeight("");
+      setFeet("");
+      setInches("");
+      setName("");
+      setEmail("");
+      setContactNumber("");
+      setAge("");
     }
   };
 
   //BMI calculator
   return (
     <div>
-
-
-      
       <section className="home_banner">
         <div className="container">
           <div className="row">
@@ -187,7 +212,7 @@ const Home = () => {
                   <div className="item text-center owl_carousel_cards">
                     <div className="card">
                       <div className="m-auto">
-                        <img src={ashok} alt="reviewimg1" />
+                        <img src={avatar1} alt="reviewimg1" />
                       </div>
                       <p>
                         <sup>
@@ -206,7 +231,7 @@ const Home = () => {
                   <div className="item text-center owl_carousel_cards">
                     <div className="card">
                       <div className="m-auto">
-                        <img src={ashok} alt="reviewimg1" />
+                        <img src={avatar2} alt="reviewimg1" />
                       </div>
                       <p>
                         <sup>
@@ -224,7 +249,7 @@ const Home = () => {
                   <div className="item text-center owl_carousel_cards">
                     <div className="card">
                       <div className="m-auto">
-                        <img src={ashok} alt="reviewimg1" />
+                        <img src={avatar3} alt="reviewimg1" />
                       </div>
                       <p>
                         <sup>
@@ -242,7 +267,10 @@ const Home = () => {
                   <div className="item text-center owl_carousel_cards">
                     <div className="card">
                       <div className="m-auto">
-                        <img src={ashok} alt="reviewimg1" />
+                        <img
+                          src="https://img.freepik.com/free-psd/3d-rendering-avatar_23-2150833554.jpg?size=626&ext=jpg&uid=R63557156&ga=GA1.2.1617011683.1703158333&semt=ais"
+                          alt="reviewimg1"
+                        />
                       </div>
                       <p>
                         <sup>
@@ -323,7 +351,8 @@ const Home = () => {
                           type="text"
                           placeholder="Enter your name"
                           className="form-control"
-                          require
+                          value={name}
+                          onChange={(event) => setName(event.target.value)}
                         />
                       </div>
                     </div>
@@ -335,6 +364,8 @@ const Home = () => {
                           type="email"
                           placeholder="Enter your email"
                           className="form-control"
+                          value={email}
+                          onChange={(event) => setEmail(event.target.value)}
                         />
                       </div>
                     </div>
@@ -345,6 +376,8 @@ const Home = () => {
                           type="number"
                           placeholder="Enter your age"
                           className="form-control"
+                          value={age}
+                          onChange={(event) => setAge(event.target.value)}
                         />
                       </div>
                     </div>
@@ -356,6 +389,8 @@ const Home = () => {
                           type="number"
                           placeholder="Enter your number"
                           className="form-control"
+                          value={contactNumber}
+                          onChange={(event) => setContactNumber(event.target.value)}
                         />
                       </div>
                     </div>
@@ -377,32 +412,50 @@ const Home = () => {
                     </div>
 
                     <div className="mt-5">
-                      <button onClick={calcBmi} className="bmisubmit content11">
+                      <button
+                        onClick={calcBmi}
+                        className="bmisubmit content11"
+                        // data-toggle="modal"
+                        // data-target="#myModal"
+                      >
                         Submit
                       </button>
                       {/* <button onClick={handleReload} className="bmireset">Reset</button> */}
                     </div>
+                    {showResult && (
+                      <div className="result-section center text-center">
+                        <h3>BMI Result :<br/> <em style={{color:"#603",fontWeight:"100"}}>{bmi + " you are in " + message || "00"}</em></h3>
+                      </div>
+                    )}
 
-                    <div data-aos="zoom-in" className="box">
-                      <div className="displayingContainer">
-                        <div className="result-section center">
-                          <h3>BMI : {bmi + message || "00"}</h3>
-                        </div>
-
-                        <div className="chart-container">
-                          <div className="bmi-chart">
-                            <div className="highlighted-region"></div>
-                            <div className="gauge">
-                              <div
-                                className="dial"
-                                style={{ transform: `rotate(${degree}deg)` }}
-                              ></div>
+                    {/* <div class="modal" id="myModal">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div className="displayingContainer">
+                            <div className="result-section center">
+                              <h3>BMI : {bmi + message || "00"}</h3>
                             </div>
-                            <div className="bmi-text"></div>
+
+                            <div className="chart-container">
+                              <div className="bmi-chart">
+                                <div className="highlighted-region"></div>
+                                <div className="gauge">
+                                  <div
+                                    className="dial"
+                                    style={{
+                                      transform: `rotate(${degree}deg)`,
+                                    }}
+                                  ></div>
+                                </div>
+                                <div className="bmi-text"></div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
+
+                      
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -447,14 +500,14 @@ const Home = () => {
                 <p>and checkout securely</p>
               </div>
             </div>
-            <div className="col-md-4 text-center">
+            <div className="col-md-4 text-left">
               <img src={work2} className="img-fluid" />
               <div className="mt-4">
                 <h5>2. Receive your food the next working day</h5>
                 <p>With FREE standard delivery</p>
               </div>
             </div>
-            <div className="col-md-4 text-right">
+            <div className="col-md-4 text-left">
               <img src={work3} className="img-fluid" />
               <div className="mt-4 text-center">
                 <h5>3. Enjoy your meals & feel great!</h5>
@@ -463,7 +516,7 @@ const Home = () => {
             </div>
           </div>
           <div className="text-center mt-5">
-            <button >Start my journey</button>
+            <button>Start my journey</button>
           </div>
         </div>
       </section>
@@ -502,9 +555,9 @@ const Home = () => {
             </OwlCarousel>
           </div>
           <div className="">
-          <div className="text-center mt-3">
-            <button >Start my journey</button>
-          </div>
+            <div className="text-center mt-3">
+              <button>Start my journey</button>
+            </div>
           </div>
         </div>
       </section>
@@ -595,9 +648,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-
-
     </div>
   );
 };

@@ -1,0 +1,39 @@
+.tabs_container {
+    width: auto;
+    margin: 0px auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  @media screen and (min-width:0px) and (max-width:768px) {
+    .tabs_container {
+      width: auto;
+      margin: 0px auto;
+      padding-top: 100px;
+      padding-bottom: 50px;
+    }
+  }
+  .tab_header {
+    display: flex;
+  }
+  
+  .tab_item {
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .tab_item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .tab_item.active {
+    background-color: #603;
+    color: #fff;
+  }
+  
+  .tab_content {
+    margin-top: 10px;
+  }
+  

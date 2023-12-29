@@ -1,0 +1,15 @@
+.security{
+    padding-top: 50px !important;
+    padding-bottom: 70px;
+}
+.security h1{
+    font-weight: 100;
+    padding-bottom: 50px;
+}
+
+
+.security p{
+font-size: 15px;
+color: #7a6f6f;
+padding-bottom: 10px;
+}

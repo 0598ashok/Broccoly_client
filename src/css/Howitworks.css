@@ -1,0 +1,108 @@
+.how_it_works {
+  padding: 100px 0px;
+}
+.how_it_works .head {
+  font-weight: 100;
+  text-align: center;
+}
+.how_it_works .grid_item {
+  background-color: #ffffff;
+  text-align: center;
+  margin-top: 50px;
+  border-radius: 5px;
+  border: none !important;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.how_it_works .grid_item h1 {
+  margin-bottom: 35px;
+  font-weight: 600;
+  padding: 20px 0px;
+  box-shadow: 0px 15px 10px -18px #111;
+  font-size: 25px;
+}
+.how_it_works .grid_item img {
+  width: 130px;
+  height: 130px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.how_it_works .grid_item p {
+  /* margin-bottom: 35px; */
+  font-weight: 200;
+  padding: 20px 10px;
+  font-size: 15px;
+  color: #603;
+}
+
+.how_it_works .grid_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.how_it_works .grid_item {
+  /* padding: 20px; */
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .how_it_works .grid_container {
+    grid-template-columns: 1fr;
+    margin: 10px;
+  }
+}
+
+.grid_container ul {
+  list-style-type: none;
+  text-align: left !important;
+  background-color: #ffffff;
+  font-size: 13px;
+  margin-bottom: 0px;
+  padding: 20px 20px 60px;
+  border-radius: 5px;
+}
+.grid_container ul li {
+  padding: 10px 0px;
+}
+
+.grid_container ul i {
+    padding-right: 15px;
+    color: #603;
+    position: relative;
+    top: 10px;
+    font-size: 17px;
+}
+
+.start_my_journey{
+    text-align: center;
+    margin-top: 50px;
+}
+.start_my_journey button {
+    height: 50px;
+    line-height: 46px;
+    padding: 0 30px;
+    border: none;
+    border-bottom: solid 4px #839900;
+    border-radius: 4px;
+    display: inline-block;
+    color: #222222;
+    font-size: 20px;
+    font-family: revert;
+    text-decoration: none;
+    text-align: center;
+    background-color: #b6cc00;
+    margin-bottom: 30px;
+    transition-property: background-color, color, opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+
+  }
+  
+  .start_my_journey button:hover {
+    background-color: #839900;
+    color: #222;
+    opacity: 1;
+  }
+  

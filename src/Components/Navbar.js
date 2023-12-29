@@ -67,22 +67,22 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li className="nav-item navItemsAli">
-                    <Link className="nav-link menuText" to="/diet-plans">
+                    <Link className="nav-link menuText" to="/diet-meals">
                       Diet Meals
                     </Link>
                   </li>
                   <li className="nav-item navItemsAli">
-                    <a className="nav-link menuText" href="/how-it-works">
+                    <Link className="nav-link menuText" to="/how-it-works">
                       How it Works
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item navItemsAli">
-                    <a className="nav-link menuText" href="/success-stories">
-                      Success Stories
-                    </a>
+                    <Link className="nav-link menuText" to="/reviews">
+                      Reviews
+                    </Link>
                   </li>
                   <li className="nav-item navItemsAli">
-                    <Link className="nav-link menuText" to="/bmicalculator">
+                    <Link className="nav-link menuText" to="/bmi-calculator">
                       BMI Calculator
                     </Link>
                   </li>
