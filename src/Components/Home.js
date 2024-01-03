@@ -197,7 +197,7 @@ const Home = () => {
                 Start my journey
               </p>
 
-              <button>start my journey</button>
+              <Link to="/diet-plans"><button>start my journey</button></Link>
             </div>
           </div>
         </div>
@@ -481,7 +481,7 @@ const Home = () => {
                 on Trustpilot
               </li>
             </ul>
-            <button>start my journey</button>
+            <Link to="/diet-plans"><button>start my journey</button></Link>
           </div>
           <div className="col-md-12 col-lg-6 home_banner2"></div>
         </div>
@@ -516,7 +516,7 @@ const Home = () => {
             </div>
           </div>
           <div className="text-center mt-5">
-            <button>Start my journey</button>
+          <Link to="/diet-plans"><button>start my journey</button></Link>
           </div>
         </div>
       </section>
@@ -556,7 +556,7 @@ const Home = () => {
           </div>
           <div className="">
             <div className="text-center mt-3">
-              <button>Start my journey</button>
+            <Link to="/diet-plans"><button>start my journey</button></Link>
             </div>
           </div>
         </div>

@@ -123,6 +123,7 @@ const Login = () => {
            If you aren't a customer of Broccoly
            <div >
             <button className="login_form_btn">Start my journey</button>
+           
            </div>
            </div>
           </div>

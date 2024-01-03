@@ -116,9 +116,7 @@ const Howitworks = () => {
         </div>
 
         <div className="start_my_journey">
-          <Link to="">
-            <button>Start my journey</button>
-          </Link>
+        <Link to="/diet-plans"><button>start my journey</button></Link>
         </div>
 
         <section className="home_broccoly_works">
@@ -184,7 +182,7 @@ const Howitworks = () => {
               </div>
             </div>
             <div className="text-center mt-5">
-              <button>Start my journey</button>
+            <Link to="/diet-plans"><button>start my journey</button></Link>
             </div>
           </div>
         </section>

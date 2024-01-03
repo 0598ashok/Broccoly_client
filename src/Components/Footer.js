@@ -2,6 +2,13 @@ import React from "react";
 import "../css/Footer.css";
 import {Link} from "react-router-dom"
 const Footer = () => {
+  const handleLinkClick = () => {
+   
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
   return (
     <div>
       <footer class="footer">
@@ -34,10 +41,10 @@ const Footer = () => {
             <h4>Customer Service</h4>
             <ul class="footer_list">
               <li>
-                <Link to="/contact">Contact us</Link>
+                <Link to="/contact" onClick={() => handleLinkClick()}>Contact us</Link>
               </li>
               <li>
-                <Link to="/login">My Account</Link>
+                <Link to="/login" onClick={() => handleLinkClick()}>My Account</Link>
               </li>
             </ul>
           </div>
@@ -45,16 +52,16 @@ const Footer = () => {
             <h4>About us</h4>
             <ul class="footer_list">
               <li>
-                <Link to="/about">About Broccoly</Link>
+                <Link to="/about" onClick={() => handleLinkClick()}>About Broccoly</Link>
               </li>
               <li>
-                <Link to="/terms-conditions">Terms & Conditions</Link>
+                <Link to="/terms-conditions" onClick={() => handleLinkClick()}>Terms & Conditions</Link>
               </li>
               <li>
-                <Link to="/privacy-policy">Privacy Policy</Link>
+                <Link to="/privacy-policy" onClick={() => handleLinkClick()}>Privacy Policy</Link>
               </li>
               <li>
-                <Link to="/cookies-policy">Cookie Policy</Link>
+                <Link to="/cookies-policy" onClick={() => handleLinkClick()}>Cookie Policy</Link>
               </li>
             </ul>
           </div>
@@ -62,13 +69,13 @@ const Footer = () => {
             <h4>Here to help</h4>
             <ul class="footer_list">
               <li>
-                <Link to="/delivery-returns">Delivery & Returns</Link>
+                <Link to="/delivery-returns" onClick={() => handleLinkClick()}>Delivery & Returns</Link>
               </li>
               <li>
-                <Link to="/faq">FAQs</Link>
+                <Link to="/faq" onClick={() => handleLinkClick()}>FAQs</Link>
               </li>
               <li>
-                <Link to="/security">Security</Link>
+                <Link to="/security" onClick={() => handleLinkClick()}>Security</Link>
               </li>
             </ul>
           </div>

@@ -5,6 +5,15 @@ import{ Link} from "react-router-dom"
 import logo from "../images/logo white bg.png";
 
 const Navbar = () => {
+ 
+  const handleLinkClick = () => {
+   
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <div>
       <div className="container">
@@ -62,32 +71,33 @@ const Navbar = () => {
               <div>
                 <ul className="navbar-nav">
                   <li className="nav-item navItemsAli">
-                    <Link className="nav-link menuText" to="/diet-plans">
+                    <Link className="nav-link menuText" to="/diet-plans" 
+                    onClick={() => handleLinkClick()}>
                       Diet Plans
                     </Link>
                   </li>
                   <li className="nav-item navItemsAli">
-                    <Link className="nav-link menuText" to="/diet-meals">
+                    <Link className="nav-link menuText" to="/diet-meals"  onClick={() => handleLinkClick()}>
                       Diet Meals
                     </Link>
                   </li>
                   <li className="nav-item navItemsAli">
-                    <Link className="nav-link menuText" to="/how-it-works">
+                    <Link className="nav-link menuText" to="/how-it-works" onClick={() => handleLinkClick()}>
                       How it Works
                     </Link>
                   </li>
                   <li className="nav-item navItemsAli">
-                    <Link className="nav-link menuText" to="/reviews">
+                    <Link className="nav-link menuText" to="/reviews" onClick={() => handleLinkClick()}>
                       Reviews
                     </Link>
                   </li>
                   <li className="nav-item navItemsAli">
-                    <Link className="nav-link menuText" to="/bmi-calculator">
+                    <Link className="nav-link menuText" to="/bmi-calculator" onClick={() => handleLinkClick()}>
                       BMI Calculator
                     </Link>
                   </li>
                   <li className="nav-item navItemsAli">
-                    <Link className="nav-link menuText" to="/login">
+                    <Link className="nav-link menuText" to="/login" onClick={() => handleLinkClick()}>
                       Login
                     </Link>
                   </li>
