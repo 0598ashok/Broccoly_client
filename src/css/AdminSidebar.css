@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.active_nav{
+  color: #fff !important;
+  background: none;
+  text-decoration: none
+};
+
+.inactive_nav{
+  color: grey !important;
+  background: none;
+  text-decoration: none !important;
+}
+
+.tabs-container{
+  color: grey;
+  font-size: 20px;
+
+}
+
+.active-tab{
+  color: rgb(116, 116, 136);
+  border: 2px solid rgb(121, 121, 125);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+.inactive-tab{
+
+}
+
+.admin_sb_icons{
+  color: #fff !important;
+  font-size: 12.96px;
+  margin-right: -15px;
+}
+.admin_sb_icon{
+  background-color: #7d84ab3b;
+    padding: 6px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+span.MuiTypography-root.MuiTypography-body1.MuiListItemText-primary.css-10hburv-MuiTypography-root {
+  font-size: 13px;
+}
+

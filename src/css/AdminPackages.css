@@ -1,0 +1,33 @@
+.foradd_new_packagename{
+text-decoration: underline;
+    cursor: pointer;
+    font-size: 12px;
+    margin-bottom: 0px !important;
+    
+}
+
+.foradd_new_packagename_ip span{
+    display: flex;
+    align-items: center;
+    padding-left: 10px !important;
+    font-size: 25px;
+    color: #766f6f;
+    font-family: cursive;
+}
+
+/* .foradd_new_packagename
+{
+    font-size: 25px;
+    border: 1px solid #ddd;
+    height: 24px;
+    position: relative;
+    top: 17px;
+    border-radius: 50%;
+    padding: 4px;
+    font-weight: 100;
+    color: #ddd;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+} */
