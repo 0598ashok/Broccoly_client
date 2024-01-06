@@ -1,0 +1,75 @@
+body {
+  font-family: poppins !important;
+}
+
+.admin_product_modal_head {
+  font-weight: 500 !important;
+  color: #508e00 !important;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-align: center;
+  font-size: 29px !important;
+  font-family: poppins !important;
+}
+.admin_productimg_uploadbtn {
+  background-color: #508e00 !important;
+  width: 100% !important;
+  color: #fff !important;
+  font-weight: bold !important;
+  font-family: "Poppins" !important;
+  padding: 7px !important;
+}
+.admin_product_description {
+  border-color: #c4c4c4;
+  border-radius: 5px;
+  padding-left: 7px;
+  padding-top: 7px;
+  width: 100%;
+}
+
+.admin_product_description::placeholder {
+  color: #666 !important;
+}
+
+.admin_product_description:focus{
+
+box-shadow: none  !important;
+border:1px solid #c4c4c4 !important;
+}
+.admin_product_description:hover{
+border: 1px solid #000 !important;
+}
+
+
+
+.text_field:invalid + label {
+    transform: translateY(0);
+  }
+  
+  .text_field:focus {
+    border-color: red;
+  }
+  
+  .text_field:focus + label {
+    color: red;
+    transform: translateY(-20px);
+  }
+
+  /* Width */
+::-webkit-scrollbar {
+  width: 2px; 
+}
+
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #508e00; /* Color of the handle */
+  border-radius: 6px; /* Rounded corners for the handle */
+}
+
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the handle on hover */
+}
+

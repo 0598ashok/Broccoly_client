@@ -76,9 +76,9 @@
     }
    
     
-    body{
+    /* body{
         padding-top: 56px;
-    }
+    } */
     .BroccolyLogo {
         font-size: 15px;
     
@@ -122,9 +122,9 @@
         background-color: #fff !important;
     }
 
-    body{
+    /* body{
         padding-top: 100px;
-    }
+    } */
 
     .HeaderMenuContainer {
         display: flex;
